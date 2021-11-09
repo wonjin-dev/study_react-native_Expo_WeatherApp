@@ -1,5 +1,8 @@
-import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import React from "react";
+import { View, Text, Dimensions, StyleSheet, ScrollView } from "react-native";
+
+const { width } = Dimensions.get("window");
+const screenWidth = width;
 
 export default function App() {
   return (
@@ -7,11 +10,29 @@ export default function App() {
       <View style={styles.city}>
         <Text style={styles.cityName}>Seoul</Text>
       </View>
-      <View style={styles.weather}>
+      <ScrollView
+        pagingEnabled
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={styles.weather}
+      >
         <View style={styles.day}>
           <Text style={styles.temp}>27</Text>
+          <Text style={styles.description}>Sunny</Text>
         </View>
-      </View>
+        <View style={styles.day}>
+          <Text style={styles.temp}>27</Text>
+          <Text style={styles.description}>Sunny</Text>
+        </View>
+        <View style={styles.day}>
+          <Text style={styles.temp}>27</Text>
+          <Text style={styles.description}>Sunny</Text>
+        </View>
+        <View style={styles.day}>
+          <Text style={styles.temp}>27</Text>
+          <Text style={styles.description}>Sunny</Text>
+        </View>
+      </ScrollView>
     </View>
   );
 }
@@ -19,28 +40,30 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'black'
+    backgroundColor: "black",
   },
   city: {
     flex: 1.2,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  weather: {
-    flex: 3
-  },
-  day: {
-    flex: 1,
-    justifyContent: 'center',
-    marginLeft: 50
+    justifyContent: "center",
+    alignItems: "center",
   },
   cityName: {
     color: 'white',
-    fontSize: 38,
-    fontWeight: '500'
+    fontSize: 58,
+    fontWeight: "500",
+  },
+  day: {
+    width: screenWidth,
+    alignItems: "center",
   },
   temp: {
     color: 'orange',
-    fontSize: 158
-  }
+    marginTop: 50,
+    fontWeight: "400",
+    fontSize: 178,
+  },
+  description: {
+    marginTop: -30,
+    fontSize: 60,
+  },
 });
