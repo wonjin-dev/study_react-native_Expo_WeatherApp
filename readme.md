@@ -20,17 +20,13 @@ const styles= StyleSheet.create({...})
 <img src="https://user-images.githubusercontent.com/65326586/140964157-1ccdde8a-e6d3-43a0-8a47-5914a6a2daa6.png" />
 
 ***optional***
-> `horizontal` &rarr;<br>
-    > 스크롤 방향을 수평으로 바꿔준다 <br>
+> `horizontal` &rarr;<br>스크롤 방향을 수평으로 바꿔준다 <br>
 
-> `pagingEnabled` &rarr;<br>
-    > 스크롤을 페이지 단위로 끊을 수 있다 <br>
+> `pagingEnabled` &rarr;<br>스크롤을 페이지 단위로 끊을 수 있다 <br>
 
-> `showHorizontalScrollIndicator` &rarr;<br>
-    > 페이지 수평 스크롤바 표기를 정할 수 있다 <br>
+> `showHorizontalScrollIndicator` &rarr;<br>페이지 수평 스크롤바 표기를 정할 수 있다 <br>
 
-> `indicatorStyle` &rarr;<br>
-    > (only IOS) 스크롤바의 스타일을 변경할 수 있다
-    
+> `indicatorStyle` &rarr;<br>(only IOS) 스크롤바의 스타일을 변경할 수 있다
+
 ## Dimension
 > 사용자의 디바이스 크기를 알 수 있는 API
