@@ -30,3 +30,6 @@ const styles= StyleSheet.create({...})
 
 ## Dimension
 > 사용자의 디바이스 크기를 알 수 있는 API
+
+## ActivityIndicator
+> 로딩중을 표시할 수 있다
