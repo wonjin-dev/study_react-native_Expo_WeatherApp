@@ -33,3 +33,12 @@ const styles= StyleSheet.create({...})
 
 ## ActivityIndicator
 > 로딩중을 표시할 수 있다
+
+## TouchableOpacity
+> 누르면 눌린것 같은(살짝 투명해지는) 애니메이션 <br> activityOpcity라는 옵션을 통해 투명도의 정도를 조절할 수 있다
+
+## TouchableHighlight
+> `TouchableOpacity`에서 opacity가 아닌 배경색이 변경된다 <br> 
+
+## TouchableWithoutFeedback
+> UI적인 변경 요소는 없는 Touchable 컴포넌트

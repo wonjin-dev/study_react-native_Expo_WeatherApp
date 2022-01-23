@@ -1,8 +1,8 @@
 import * as Location from 'expo-location';
-import React, { useEffect, useState } from "react";
-import { View, Text, Dimensions, StyleSheet, ScrollView, ActivityIndicator } from "react-native";
-import { Fontisto } from "@expo/vector-icons";
-const { width } = Dimensions.get("window");
+import React, {useState, useEffect} from "react";
+import {View, Text, Dimensions, StyleSheet, ScrollView, ActivityIndicator} from "react-native";
+import {Fontisto} from "@expo/vector-icons";
+const {width} = Dimensions.get("window");
 const icons = {
   Clouds: "cloudy",
   Clear: "day-sunny",
@@ -53,7 +53,7 @@ export default function App() {
           <View style={styles.day}>
             <ActivityIndicator
               color="white"
-              style={{ marginTop: 10 }}
+              style={{marginTop: 10}}
               size="large"
             />
           </View>
